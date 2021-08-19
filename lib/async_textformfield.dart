@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class AsyncTextFormField extends StatefulWidget {
-  final Future<String?> Function(String)? validator;
+  final FutureOr<String?> Function(String)? validator;
   final Duration? validationDebounce;
   final TextEditingController? controller;
 
